@@ -32,11 +32,13 @@ Após, abra o repositório clonado, clicando na mensagem que o próprio VSCode i
 *Execute um comando de cada vez, substituindo o valor entre as aspas " " e pressionando a tecla **Enter** para cada comando.*
 ```GIT
 git config user.name = "SEU NOME AQUI"
+```
+```GIT
 git config user.email = "SEU E-MAIL AQUI"
 ```
 
 ## Remover remoto (link com meu repositório do git)
-Copie o comando abaixo e execute no terminal do VSCode
+Copie o comando abaixo e execute no terminal do VSCode.
 ```GIT
 git remote rm origin
 ```
