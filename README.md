@@ -1,4 +1,4 @@
-# Orientações - Prova Programação [30/08/2022 - 15:30 até 17:00]
+# Orientações - Prova Programação [01/09/2022 - 15:30 até 17:00]
 
 ## Distribuição das Questões (Questões A e B)
 
