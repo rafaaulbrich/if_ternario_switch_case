@@ -12,10 +12,28 @@
 
     //ENTRADA
 
+    const comprarPadaria = prompt("o que você deseja comprar na padaria? PF-Pão francês | BC-Cuca | SO-Sonho").toUpperCase();
+    let resultadoNaTela;
 
     //PROCESSAMENTO
 
+    switch (comprarPadaria) {
+        case "PF":
+            resultadoNaTela = "Preço do Kg: R$ 5,00"
+            break;
+        case "BC":
+            resultadoNaTela = "Preço do pedaço: R$ 15,00"
+            break;
+        case "SO": 
+            resultadoNaTela = "Preço da Unidade: R$ 1,50"
+            break;
+        default:
+            resultadoNaTela = "Opção de compra inválida"
+            break;
+    }
 
     //SAÍDA
+
+    document.write(resultadoNaTela);
 
 </script>

@@ -12,10 +12,26 @@
 
     //ENTRADA
 
+    const turno = prompt("em que turno você trabalha? M-Manhã | T-Tarde | N-Noite").toUpperCase();
+    const recebeHora = parseInt(prompt("quanto você recebe por hora?"));
+    let resultadoNaTela;
 
     //PROCESSAMENTO
 
+    switch (turno) {
+        case "M":
+            resultadoNaTela = "cada hora trabalhada será pago R$ " + (recebeHora + (recebeHora * 2/100)) + " reais."
+            break;
+        case "T": 
+            resultadoNaTela = "cada hora trabalhada será pago R$ " + (recebeHora + (recebeHora * 4/100)) + " reais."
+            break;
+        case "N": 
+            resultadoNaTela = "cada hora trabalhada será pago R$ " + (recebeHora + (recebeHora * 7/100)) + " reais."
+            break;
+    }
 
     //SAÍDA
+
+    document.write(resultadoNaTela);
 
 </script>

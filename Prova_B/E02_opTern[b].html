@@ -12,10 +12,18 @@
 
     //ENTRADA
 
+    const valorResidencia = parseInt(prompt("qual o valor da residência que você deseja comprar?"));
+    const mesesFinanciamento = parseInt(prompt("em quantos meses você pagará o financiamento da casa?"));
+    let resultadoNaTela;
 
     //PROCESSAMENTO
 
+    (mesesFinanciamento <= 120) ? resultadoNaTela = "o valor total com os juros será de R$ " + (valorResidencia + (valorResidencia * 55/100))
+    : (mesesFinanciamento <= 240) ? resultadoNaTela = "o valor total com os juros será de R$ " + (valorResidencia + (valorResidencia * 65/100))
+    : resultadoNaTela = "o valor total com juros será de R$ " + (valorResidencia + (valorResidencia * 85/100));
 
     //SAÍDA
+
+    document.write(resultadoNaTela);
 
 </script>
